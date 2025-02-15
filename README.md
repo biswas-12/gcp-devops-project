@@ -1,4 +1,3 @@
-### gcp-devops-project
-This is a repo for our GCP DevOps Project
-
-Made the changes to Branch Protection.
+# Docker Flask Application
+- This application is written on python
+- It should be deployed on GCP
