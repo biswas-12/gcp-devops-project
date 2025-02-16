@@ -1,7 +1,12 @@
 steps:
-  # build the container image
-- name: "gcr.io/cloud-builders/docker"
-  args: ["build", "-t", "gcr.io/$PROJECT_ID/gcpdevops", "."]
-  # push container image
-- name: "gcr.io/cloud-builders/docker"
-  args: ["push", "gcr.io/$PROJECT_ID/gcpdevops"]
+  # Build the container image
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "gcr.io/$PROJECT_ID/gcpdevops", "."]
+  # Push the container image
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "gcr.io/$PROJECT_ID/gcpdevops"]
+
+options:
+  logging: NONE
+
+serviceAccount: '297818405395-compute@developer.gserviceaccount.com'
