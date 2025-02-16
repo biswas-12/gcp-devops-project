@@ -14,3 +14,9 @@ steps:
   - --location=us-central1-c
   - --cluster=gcp-devops-project
   - --namespace=gcp-devops-prod
+
+
+options:
+  logging: NONE
+
+serviceAccount: '297818405395-compute@developer.gserviceaccount.com'
