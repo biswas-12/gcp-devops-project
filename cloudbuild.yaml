@@ -19,4 +19,4 @@ steps:
 options:
   logging: NONE
 
-serviceAccount: '297818405395-compute@developer.gserviceaccount.com'
+serviceAccount: 'ADD SERVICE ACCOUNT'
